@@ -7,7 +7,3 @@ resource "null_resource" "build" {
 data "local_file" "manifest" {
   filename = "manifest.json"
 }
-
-output "Manifest" {
-  value = data.local_file.manifest.content
-}
